@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 extension String: Identifiable {
     public var id: String { self }

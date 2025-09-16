@@ -2,6 +2,8 @@ import SwiftUI
 import AVFoundation
 import Cocoa
 import KeyboardShortcuts
+import ApplicationServices
+import CoreGraphics
 
 class PermissionManager: ObservableObject {
     @Published var audioPermissionStatus = AVCaptureDevice.authorizationStatus(for: .audio)

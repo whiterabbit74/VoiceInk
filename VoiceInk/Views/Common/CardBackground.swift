@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 // Style Constants for consistent styling across components
 struct StyleConstants {

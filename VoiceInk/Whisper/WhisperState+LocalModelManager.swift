@@ -2,6 +2,7 @@ import Foundation
 import os
 import Zip
 import SwiftUI
+import AppKit
 
 
 struct WhisperModel: Identifiable {

@@ -1,5 +1,6 @@
 import SwiftUI
 import Charts
+import AppKit
 
 struct MetricsContent: View {
     let transcriptions: [Transcription]

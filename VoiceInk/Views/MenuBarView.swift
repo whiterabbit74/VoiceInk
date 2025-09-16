@@ -1,5 +1,6 @@
 import SwiftUI
 import LaunchAtLogin
+import AppKit
 
 struct MenuBarView: View {
     @EnvironmentObject var whisperState: WhisperState

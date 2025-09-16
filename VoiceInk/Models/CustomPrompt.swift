@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import AppKit
 
 enum PromptIcon: String, Codable, CaseIterable {
     // Document & Text

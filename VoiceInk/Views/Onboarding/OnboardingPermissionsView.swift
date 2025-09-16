@@ -2,6 +2,8 @@ import SwiftUI
 import AVFoundation
 import AppKit
 import KeyboardShortcuts
+import ApplicationServices
+import CoreGraphics
 
 struct OnboardingPermission: Identifiable {
     let id = UUID()

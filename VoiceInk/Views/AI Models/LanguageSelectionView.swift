@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 // Define a display mode for flexible usage
 enum LanguageDisplayMode {

@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct AppIconView: View {
     var body: some View {

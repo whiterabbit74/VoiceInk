@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 extension View {
     func placeholder<Content: View>(

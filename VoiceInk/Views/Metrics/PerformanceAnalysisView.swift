@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct PerformanceAnalysisView: View {
     @Environment(\.dismiss) private var dismiss

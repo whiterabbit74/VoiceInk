@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct ModelSettingsView: View {
     @ObservedObject var whisperPrompt: WhisperPrompt

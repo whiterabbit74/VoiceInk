@@ -2,6 +2,9 @@ import SwiftUI
 import SwiftData
 import Charts
 import KeyboardShortcuts
+import AppKit
+import ApplicationServices
+import CoreGraphics
 
 struct MetricsView: View {
     @Environment(\.modelContext) private var modelContext

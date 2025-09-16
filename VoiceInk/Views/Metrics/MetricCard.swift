@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct MetricCard: View {
     let title: String

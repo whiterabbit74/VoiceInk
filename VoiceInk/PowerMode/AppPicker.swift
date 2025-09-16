@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 // App Picker Sheet
 struct AppPickerSheet: View {

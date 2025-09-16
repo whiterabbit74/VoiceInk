@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct PromptEditorView: View {
     enum Mode {

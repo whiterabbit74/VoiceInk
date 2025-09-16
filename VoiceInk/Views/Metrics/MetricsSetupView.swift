@@ -1,5 +1,8 @@
 import SwiftUI
 import KeyboardShortcuts
+import AppKit
+import ApplicationServices
+import CoreGraphics
 
 struct MetricsSetupView: View {
     @EnvironmentObject private var whisperState: WhisperState

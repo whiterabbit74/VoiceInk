@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct APIKeyManagementView: View {
     @EnvironmentObject private var aiService: AIService

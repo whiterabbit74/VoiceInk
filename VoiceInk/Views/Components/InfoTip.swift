@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 /// A reusable info tip component that displays helpful information in a popover
 struct InfoTip: View {

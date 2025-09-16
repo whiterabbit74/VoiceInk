@@ -1,5 +1,6 @@
 import SwiftUI
 import AVFoundation
+import AppKit
 
 class WaveformGenerator {
     static func generateWaveformSamples(from url: URL, sampleCount: Int = 200) async -> [Float] {
