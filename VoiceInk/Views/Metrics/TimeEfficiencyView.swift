@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct TimeEfficiencyView: View {
     // MARK: - Properties

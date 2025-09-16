@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct DictionaryItem: Identifiable, Hashable, Codable {
     let id: UUID

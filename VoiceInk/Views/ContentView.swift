@@ -1,6 +1,9 @@
 import SwiftUI
 import SwiftData
 import KeyboardShortcuts
+import AppKit
+import ApplicationServices
+import CoreGraphics
 
 // ViewType enum with all cases
 enum ViewType: String, CaseIterable {

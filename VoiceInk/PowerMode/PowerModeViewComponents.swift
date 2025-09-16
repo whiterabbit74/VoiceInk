@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct VoiceInkButton: View {
     let title: String

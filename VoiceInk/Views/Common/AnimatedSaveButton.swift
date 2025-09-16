@@ -1,5 +1,6 @@
 import SwiftUI
 import UniformTypeIdentifiers
+import AppKit
 
 struct AnimatedSaveButton: View {
     let textToSave: String

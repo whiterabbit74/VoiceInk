@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct ConfigurationView: View {
     let mode: ConfigurationMode

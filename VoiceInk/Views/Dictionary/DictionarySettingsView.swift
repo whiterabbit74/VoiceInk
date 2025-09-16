@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct DictionarySettingsView: View {
     @State private var selectedSection: DictionarySection = .replacements

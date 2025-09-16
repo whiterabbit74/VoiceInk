@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct AudioInputSettingsView: View {
     @ObservedObject var audioDeviceManager = AudioDeviceManager.shared

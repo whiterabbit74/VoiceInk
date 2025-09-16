@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct NotchRecorderView: View {
     @ObservedObject var whisperState: WhisperState

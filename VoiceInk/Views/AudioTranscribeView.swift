@@ -2,6 +2,7 @@ import SwiftUI
 import SwiftData
 import UniformTypeIdentifiers
 import AVFoundation
+import AppKit
 
 struct AudioTranscribeView: View {
     @Environment(\.modelContext) private var modelContext

@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 // Edit existing word replacement entry
 struct EditReplacementSheet: View {
     @ObservedObject var manager: WordReplacementManager
