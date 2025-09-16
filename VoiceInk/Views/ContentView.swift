@@ -14,8 +14,7 @@ enum ViewType: String, CaseIterable {
     case audioInput = "Audio Input"
     case dictionary = "Dictionary"
     case settings = "Settings"
-    case license = "VoiceInk Pro"
-    
+
     var icon: String {
         switch self {
         case .metrics: return "gauge.medium"
@@ -28,7 +27,6 @@ enum ViewType: String, CaseIterable {
         case .audioInput: return "mic.fill"
         case .dictionary: return "character.book.closed.fill"
         case .settings: return "gearshape.fill"
-        case .license: return "checkmark.seal.fill"
         }
     }
 }
@@ -55,7 +53,6 @@ struct DynamicSidebar: View {
     @Binding var selectedView: ViewType
     @Binding var hoveredView: ViewType?
     @Environment(\.colorScheme) private var colorScheme
-    @StateObject private var licenseViewModel = LicenseViewModel()
     @Namespace private var buttonAnimation
 
     var body: some View {
@@ -69,20 +66,10 @@ struct DynamicSidebar: View {
                         .frame(width: 28, height: 28)
                         .cornerRadius(8)
                 }
-                
+
                 Text("VoiceInk")
                     .font(.system(size: 14, weight: .semibold))
-                
-                if case .licensed = licenseViewModel.licenseState {
-                    Text("PRO")
-                        .font(.system(size: 9, weight: .heavy))
-                        .foregroundStyle(.white)
-                        .padding(.horizontal, 4)
-                        .padding(.vertical, 2)
-                        .background(Color.blue)
-                        .cornerRadius(4)
-                }
-                
+
                 Spacer()
             }
             .padding(.horizontal, 16)
@@ -162,10 +149,8 @@ struct ContentView: View {
     @State private var selectedView: ViewType = .metrics
     @State private var hoveredView: ViewType?
     @State private var hasLoadedData = false
-    let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0"
-    @StateObject private var licenseViewModel = LicenseViewModel()
-    
-    
+
+
     private var isSetupComplete: Bool {
         hasLoadedData &&
         whisperState.currentTranscriptionModel != nil &&
@@ -205,9 +190,6 @@ struct ContentView: View {
                 case "AI Models":
                     print("ContentView: Navigating to AI Models")
                     selectedView = .models
-                case "VoiceInk Pro":
-                    print("ContentView: Navigating to VoiceInk Pro")
-                    selectedView = .license
                 case "History":
                     print("ContentView: Navigating to History")
                     selectedView = .history
@@ -258,8 +240,6 @@ struct ContentView: View {
         case .settings:
             SettingsView()
                 .environmentObject(whisperState)
-        case .license:
-            LicenseManagementView()
         case .permissions:
             PermissionsView()
         }
